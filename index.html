@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <title>PokeCode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/logo.png" alt="PokeCode Logo">
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <!-- <li><a href="#">Home</a></li> -->
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="index.html">Linguagens</a></li>
+                <li><a href="ide.html">IDE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="languages">
+            <div class="language-card" onclick="openPopup('PYTHON')">
+                <img src="assets/python.webp" alt="PYTHON">
+                <h2>PYTHON</h2>
+                <span class="tag interpreted">Interpretada</span>
+                <span class="tag procedural">Procedural</span>
+            </div>
+            <div class="language-card" onclick="openPopup('JAVASCRIPT')">
+                <img src="assets/javascript.webp" alt="JAVASCRIPT">
+                <h2>JAVASCRIPT</h2>
+                <span class="tag interpreted">Interpretada</span>
+                <span class="tag oriented">Orientada</span>
+            </div>
+            <div class="language-card" onclick="openPopup('VISUALBASIC')">
+                <img src="assets/visualbasic.webp" alt="VISUALBASIC">
+                <h2>VISUALBASIC</h2>
+                <span class="tag interpreted">Interpretada</span>
+                <span class="tag oriented">Orientada</span>
+            </div>
+            <div class="language-card" onclick="openPopup('MATLAB')">
+                <img src="assets/matlab.webp" alt="MATLAB">
+                <h2>MATLAB</h2>
+                <span class="tag interpreted">Interpretada</span>
+                <span class="tag procedural">Procedural</span>
+            </div>
+            <div class="language-card" onclick="openPopup('LUA')">
+                <img src="assets/lua.webp" alt="LUA">
+                <h2>LUA</h2>
+                <span class="tag interpreted">Interpretada</span>
+                <span class="tag oriented">Orientada</span>
+            </div>
+            <div class="language-card" onclick="openPopup('C++')">
+                <img src="assets/cmaismais.webp" alt="C++">
+                <h2>C++</h2>
+                <span class="tag compiled">Compilada</span>
+                <span class="tag procedural">Procedural</span>
+            </div>
+            <div class="language-card" onclick="openPopup('C#')">
+                <img src="assets/csharp.webp" alt="C#">
+                <h2>C#</h2>
+                <span class="tag compiled">Compilada</span>
+                <span class="tag oriented">Orientada</span>
+            </div>
+            <div class="language-card" onclick="openPopup('GO')">
+                <img src="assets/go.webp" alt="GO">
+                <h2>GO</h2>
+                <span class="tag compiled">Compilada</span>
+                <span class="tag procedural">Procedural</span>
+            </div>
+            <div class="language-card" onclick="openPopup('DELPHI')">
+                <img src="assets/delphi.webp" alt="DELPHI">
+                <h2>DELPHI</h2>
+                <span class="tag compiled">Compilada</span>
+                <span class="tag oriented">Orientada</span>
+            </div>
+            <div class="language-card" onclick="openPopup('PHP')">
+                <img src="assets/php.webp" alt="PHP">
+                <h2>PHP</h2>
+                <span class="tag interpreted">Interpretada</span>
+                <span class="tag oriented">Orientada</span>
+            </div>
+            <div class="language-card" onclick="openPopup('JAVA')">
+                <img src="assets/java.webp" alt="JAVA">
+                <h2>JAVA</h2>
+                <span class="tag compiled">Compilada</span>
+                <span class="tag oriented">Orientada</span>
+            </div>
+            <div class="language-card" onclick="openPopup('C')">
+                <img src="assets/c.webp" alt="C">
+                <h2>C</h2>
+                <span class="tag compiled">Compilada</span>
+                <span class="tag procedural">Procedural</span>
+            </div>
+            <div class="language-card" onclick="openPopup('SQL')">
+                <img src="assets/sqlNovo.webp" alt="SQL">
+                <h2>SQL</h2>
+                <span class="tag interpreted">Interpretada</span>
+                <span class="tag procedural">Procedural</span>
+            </div>
+            <div class="language-card" onclick="openPopup('FORTRAN')">
+                <img src="assets/fortran.webp" alt="FORTRAN">
+                <h2>FORTRAN</h2>
+                <span class="tag compiled">Compilada</span>
+                <span class="tag procedural">Procedural</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Estrutura do Popup -->
+    <div id="popup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Linguagem">
+            <h2 id="popup-title"></h2>
+            <div id="popup-tags"></div>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    // Dados para cada linguagem de programação
+    const languageData = {
+        "PYTHON": {
+            image: "assets/python.webp",
+            description: "Python é uma linguagem interpretada, conhecida por sua simplicidade e versatilidade em diversas áreas, como ciência de dados e desenvolvimento web.",
+            tags: ["Interpretada", "Procedural"]
+        },
+        "JAVASCRIPT": {
+            image: "assets/javascript.webp",
+            description: "JavaScript é uma linguagem interpretada usada principalmente para desenvolvimento web, possibilitando a criação de páginas dinâmicas.",
+            tags: ["Interpretada", "Orientada"]
+        },
+        "C": {
+            image: "assets/c.webp",
+            description: "C é uma linguagem compilada e procedural, conhecida por sua eficiência e proximidade com o hardware.",
+            tags: ["Compilada", "Procedural"]
+        },
+        "VISUALBASIC": {
+            image: "assets/visualbasic.webp",
+            description: "Visual Basic é uma linguagem da Microsoft focada no desenvolvimento de aplicações desktop e automação.",
+            tags: ["Interpretada", "Orientada"]
+        },
+        "MATLAB": {
+            image: "assets/matlab.webp",
+            description: "MATLAB é uma linguagem de programação utilizada especialmente em computação científica e engenharia.",
+            tags: ["Interpretada", "Procedural"]
+        },
+        "LUA": {
+            image: "assets/lua.webp",
+            description: "LUA é uma linguagem de script leve, popular em jogos e aplicativos embarcados.",
+            tags: ["Interpretada", "Orientada"]
+        },
+        "C++": {
+            image: "assets/cmaismais.webp",
+            description: "C++ é uma linguagem compilada, ideal para desenvolvimento de sistemas, jogos e aplicações de alta performance.",
+            tags: ["Compilada", "Procedural"]
+        },
+        "C#": {
+            image: "assets/csharp.webp",
+            description: "C# é uma linguagem da Microsoft, comumente usada em aplicações de desktop, jogos e desenvolvimento web.",
+            tags: ["Compilada", "Orientada"]
+        },
+        "GO": {
+            image: "assets/go.webp",
+            description: "Go é uma linguagem de programação de código aberto desenvolvida pelo Google, focada em produtividade e desempenho.",
+            tags: ["Compilada", "Procedural"]
+        },
+        "DELPHI": {
+            image: "assets/delphi.webp",
+            description: "Delphi é uma linguagem de desenvolvimento de software, popular para desenvolvimento de aplicações desktop.",
+            tags: ["Compilada", "Orientada"]
+        },
+        "PHP": {
+            image: "assets/PHP.webp",
+            description: "PHP é uma linguagem de script do lado do servidor, amplamente utilizada no desenvolvimento web.",
+            tags: ["Interpretada", "Orientada"]
+        },
+        "JAVA": {
+            image: "assets/java.webp",
+            description: "Java é uma linguagem orientada a objetos, amplamente usada em aplicações empresariais e móveis.",
+            tags: ["Compilada", "Orientada"]
+        },
+        "SQL": {
+            image: "assets/sqlNovo.webp",
+            description: "SQL é uma linguagem de consulta utilizada para manipulação e gerenciamento de dados em bancos de dados.",
+            tags: ["Interpretada", "Procedural"]
+        },
+        "FORTRAN": {
+            image: "assets/fortran.webp",
+            description: "Fortran é uma linguagem de programação especialmente voltada para computação científica e engenharia.",
+            tags: ["Compilada", "Procedural"]
+        }      
+    };
+
+    // Função para abrir o popup
+    function openPopup(language) {
+        const data = languageData[language];
+        document.getElementById("popup-title").textContent = language;
+        document.getElementById("popup-description").textContent = data.description;
+        document.getElementById("popup-image").src = data.image;
+
+        // Limpa tags anteriores e adiciona novas
+        const tagsContainer = document.getElementById("popup-tags");
+        tagsContainer.innerHTML = "";
+        data.tags.forEach(tag => {
+            const tagElement = document.createElement("span");
+            tagElement.className = "tag " + tag.toLowerCase();
+            tagElement.textContent = tag;
+            tagsContainer.appendChild(tagElement);
+        });
+
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    // Função para fechar o popup
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+

@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    height: 70px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 2% 0 0 3%;
+}
+
+.logo img {
+    width: 120px; /* Tamanho do logo */
+    display: flex;
+    position: absolute;
+    margin: -33px 0px 0px 46px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    /* font-weight: bold; */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F9CD21; /* Cor de destaque ao passar o mouse */
+}
+
+nav ul li a.active {
+    color: #F9CD21;
+    border-bottom: 3px solid #F9CD21; /* Destaque da aba ativa */
+}
+
+
+/* header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+} */
+
+nav ul li a:hover, nav ul li a.active {
+    color: #F9CD21;
+}
+
+/* .languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+} */
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.language-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    transition: border 0.1s ease; /* Adiciona uma transição suave */
+}
+
+.language-card:hover {
+    border: 2px solid #f7b500; /* Adiciona a borda amarela ao passar o mouse */
+}
+
+.language-card img {
+    width: 80px;
+    /* height: 100px; */
+}
+
+.language-card h2 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 5px 3px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.compiled {
+    background-color: #FFE680;
+}
+
+.procedural {
+    background-color: #8EB0FF;
+}
+
+.interpreted {
+    background-color: #A8EF8C;
+}
+
+.oriented {
+    background-color: #EA6863;
+}
+
+/* Torna o contêiner principal flexível */
+main {
+    display: flex;
+    flex-direction: row; /* Alinha lado a lado */
+    justify-content: space-between; /* Espaça os itens */
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 20px; /* Espaço entre os quadros */
+    padding: 20px;
+}
+
+/* Ajusta a seção do editor */
+.editor-section {
+    flex: 1; /* Faz o editor ocupar mais espaço */
+    max-width: 60%; /* Define um limite máximo para o editor */
+}
+
+/* Ajusta o quadro de imagem */
+#language-image {
+    flex: 0 0 30%; /* O quadro de imagem ocupa 30% do espaço */
+    text-align: center;
+}
+
+#language-image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#language-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Largura do quadro */
+    height: 300px; /* Altura do quadro */
+    margin: 20px auto; /* Centralização horizontal com margem */
+}
+
+#language-image img {
+    max-width: 90%; /* Ajusta largura máxima da imagem */
+    max-height: 90%; /* Ajusta altura máxima da imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste proporcionalmente */
+}

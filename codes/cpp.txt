@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::cout << "Olá, Mundo!" << std::endl; // Impressão na Tela -> Olá, Mundo!
+
+    std::cout << (2 + 3) << std::endl; // Impressão na Tela -> 5
+
+    std::cout << "A soma de 2 + 3 é: " << (2 + 3) << std::endl; // Impressão na Tela -> A soma de 2 + 3 é: 5
+
+    // Variáveis são como "caixas" que guardam dados.
+    int idade = 25; // 'idade' é considerado um int
+    std::string nome = "Ana"; // 'nome' é considerado uma string
+
+    // Entrada de dados
+    std::cout << "Digite sua idade: ";
+    std::cin >> idade; // Lê a idade como um inteiro
+    std::cout << "Sua idade é: " << idade << std::endl;
+
+    if (idade >= 18) { // Se a condição for verdadeira
+        std::cout << "Você é maior de idade." << std::endl;
+    } else if (idade >= 16) { // Se a primeira condição não for verdadeira
+        std::cout << "Você pode votar, mas não dirigir." << std::endl;
+    } else { // Caso nenhuma condição seja verdadeira
+        std::cout << "Você é menor de idade." << std::endl;
+    }
+
+    std::cout << "\nExemplo com for:" << std::endl;
+    for (int i = 0; i < 5; i++) { // Itera os números: 0, 1, 2, 3, 4
+        std::cout << "O valor de i é: " << i << std::endl;
+    }
+
+    int contador = 0;
+    while (contador < 5) { // Enquanto a condição for verdadeira
+        std::cout << "O contador é: " << contador << std::endl;
+        contador++;
+    }
+
+    return 0;
+}
+
+
+#include <iostream>\n\n
+#include <string>\n\n
+
+int main() {\n    std::cout << "Olá, Mundo!" << std::endl; // Impressão na Tela -> Olá, Mundo!\n\n    std::cout << (2 + 3) << std::endl; // Impressão na Tela -> 5\n\n    std::cout << "A soma de 2 + 3 é: " << (2 + 3) << std::endl; // Impressão na Tela -> A soma de 2 + 3 é: 5\n\n    // Variáveis são como "caixas" que guardam dados.\n    int idade = 25; // 'idade' é considerado um int\n    std::string nome = "Ana"; // 'nome' é considerado uma string\n\n    // Entrada de dados\n    std::cout << "Digite sua idade: ";\n    std::cin >> idade; // Lê a idade como um inteiro\n    std::cout << "Sua idade é: " << idade << std::endl;\n\n    if (idade >= 18) { // Se a condição for verdadeira\n        std::cout << "Você é maior de idade." << std::endl;\n    } else if (idade >= 16) { // Se a primeira condição não for verdadeira\n        std::cout << "Você pode votar, mas não dirigir." << std::endl;\n    } else { // Caso nenhuma condição seja verdadeira\n        std::cout << "Você é menor de idade." << std::endl;\n    }\n\n    std::cout << "\nExemplo com for:" << std::endl;\n    for (int i = 0; i < 5; i++) { // Itera os números: 0, 1, 2, 3, 4\n        std::cout << "O valor de i é: " << i << std::endl;\n    }\n\n    int contador = 0;\n    while (contador < 5) { // Enquanto a condição for verdadeira\n        std::cout << "O contador é: " << contador << std::endl;\n        contador++;\n    }\n\n    return 0;\n}

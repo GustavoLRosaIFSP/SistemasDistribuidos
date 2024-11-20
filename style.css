@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    height: 70px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 2% 0 0 3%;
+}
+
+.logo img {
+    width: 120px; /* Tamanho do logo */
+    display: flex;
+    position: absolute;
+    margin: -33px 0px 0px 46px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    /* font-weight: bold; */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F9CD21; /* Cor de destaque ao passar o mouse */
+}
+
+nav ul li a.active {
+    color: #F9CD21;
+    border-bottom: 3px solid #F9CD21; /* Destaque da aba ativa */
+}
+
+
+/* header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+} */
+
+nav ul li a:hover, nav ul li a.active {
+    color: #F9CD21;
+}
+
+/* .languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+} */
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.language-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    transition: border 0.1s ease; /* Adiciona uma transição suave */
+}
+
+.language-card:hover {
+    border: 2px solid #f7b500; /* Adiciona a borda amarela ao passar o mouse */
+}
+
+.language-card img {
+    width: 80px;
+    /* height: 100px; */
+}
+
+.language-card h2 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 5px 3px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.compiled {
+    background-color: #FFD700;
+}
+
+.procedural {
+    background-color: #1E90FF;
+}
+
+.interpreted {
+    background-color: #32CD32;
+}
+
+.oriented {
+    background-color: #FF6347;
+}
+
+
+/* Estilo para o popup */
+.popup-overlay {
+    display: flex; /* Esconde o popup ao carregar a página */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 90%;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-content img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.popup-content h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#popup-tags {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tag {
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tag.compilada { background-color: #FFD700; /* Dourado para Compilada */ }
+.tag.procedural { background-color: #1E90FF; /* Azul para Procedural */ }
+.tag.interpretada { background-color: #32CD32; /* Verde para Interpretada */ }
+.tag.orientada { background-color: #FF6347; /* Vermelho para Orientada */ }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+

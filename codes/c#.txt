@@ -1,0 +1,39 @@
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Olá, Mundo!"); // Impressão na Tela -> Olá, Mundo!
+
+        Console.WriteLine(2 + 3); // Impressão na Tela -> 5
+
+        Console.WriteLine("A soma de 2 + 3 é: " + (2 + 3)); // Impressão na Tela -> A soma de 2 + 3 é: 5
+
+        // Variáveis são como "caixas" que guardam dados.
+        int idade = 25; // 'idade' é considerado um int
+        string nome = "Ana"; // 'nome' é considerado uma string
+
+        // Entrada de dados
+        Console.Write("Digite sua idade: ");
+        idade = int.Parse(Console.ReadLine()); // Converte a entrada para inteiro
+        Console.WriteLine("Sua idade é: " + idade);
+
+        if (idade >= 18) { // Se a condição for verdadeira
+            Console.WriteLine("Você é maior de idade.");
+        } else if (idade >= 16) { // Se a primeira condição não for verdadeira
+            Console.WriteLine("Você pode votar, mas não dirigir.");
+        } else { // Caso nenhuma condição seja verdadeira
+            Console.WriteLine("Você é menor de idade.");
+        }
+
+        Console.WriteLine("\nExemplo com for:");
+        for (int i = 0; i < 5; i++) { // Itera os números: 0, 1, 2, 3, 4
+            Console.WriteLine("O valor de i é: " + i);
+        }
+
+        int contador = 0;
+        while (contador < 5) { // Enquanto a condição for verdadeira
+            Console.WriteLine("O contador é: " + contador);
+            contador++;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+-- Olá, Mundo!
+print("Olá, Mundo!") -- Impressão na Tela -> Olá, Mundo!
+
+print(2 + 3) -- Impressão na Tela -> 5
+
+print("A soma de 2 + 3 é:", 2 + 3) -- Impressão na Tela -> A soma de 2 + 3 é: 5
+
+-- Variáveis são como "caixas" que guardam dados.
+idade = 25 -- 'idade' é considerado um número
+nome = "Ana" -- 'nome' é considerado uma string
+
+-- Entrada de dados
+io.write("Digite sua idade: ")
+idade = tonumber(io.read()) -- Converte a entrada para número
+print("Sua idade é:", idade)
+
+-- Condicional
+if idade >= 18 then -- Se a condição for verdadeira
+    print("Você é maior de idade.")
+elseif idade >= 16 then -- Se a primeira condição não for verdadeira
+    print("Você pode votar, mas não dirigir.")
+else -- Caso nenhuma condição seja verdadeira
+    print("Você é menor de idade.")
+end
+
+-- Exemplo com for
+print("\nExemplo com for:")
+for i = 0, 4 do -- Itera os números: 0, 1, 2, 3, 4
+    print("O valor de i é:", i)
+end
+
+-- Exemplo com while
+contador = 0
+while contador < 5 do -- Enquanto a condição for verdadeira
+    print("O contador é:", contador)
+    contador = contador + 1
+end
+
+
+-- Olá, Mundo!\nprint("Olá, Mundo!") -- Impressão na Tela -> Olá, Mundo!\n\nprint(2 + 3) -- Impressão na Tela -> 5\n\nprint("A soma de 2 + 3 é:", 2 + 3) -- Impressão na Tela -> A soma de 2 + 3 é: 5\n\n-- Variáveis são como "caixas" que guardam dados.\nidade = 25 -- 'idade' é considerado um número\nnome = "Ana" -- 'nome' é considerado uma string\n\n-- Entrada de dados\nio.write("Digite sua idade: ")\nidade = tonumber(io.read()) -- Converte a entrada para número\nprint("Sua idade é:", idade)\n\n-- Condicional\nif idade >= 18 then -- Se a condição for verdadeira\n    print("Você é maior de idade.")\nelseif idade >= 16 then -- Se a primeira condição não for verdadeira\n    print("Você pode votar, mas não dirigir.")\nelse -- Caso nenhuma condição seja verdadeira\n    print("Você é menor de idade.")\nend\n\n-- Exemplo com for\nprint("\nExemplo com for:")\nfor i = 0, 4 do -- Itera os números: 0, 1, 2, 3, 4\n    print("O valor de i é:", i)\nend\n\n-- Exemplo com while\ncontador = 0\nwhile contador < 5 do -- Enquanto a condição for verdadeira\n    print("O contador é:", contador)\n    contador = contador + 1\nend\n

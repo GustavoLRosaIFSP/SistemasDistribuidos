@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    printf("Olá, Mundo!\n"); // Impressão na Tela -> Olá, Mundo!
+
+    printf("%d\n", 2 + 3); // Impressão na Tela -> 5
+
+    printf("A soma de 2 + 3 é: %d\n", 2 + 3); // Impressão na Tela -> A soma de 2 + 3 é: 5
+
+    // Variáveis são como "caixas" que guardam dados.
+    int idade = 25; // 'idade' é considerado um int
+    char nome[] = "Ana"; // 'nome' é considerado uma string
+
+    // Entrada de dados
+    printf("Digite sua idade: ");
+    scanf("%d", &idade); // Lê a idade como um inteiro
+    printf("Sua idade é: %d\n", idade);
+
+    if (idade >= 18) { // Se a condição for verdadeira
+        printf("Você é maior de idade.\n");
+    } else if (idade >= 16) { // Se a primeira condição não for verdadeira
+        printf("Você pode votar, mas não dirigir.\n");
+    } else { // Caso nenhuma condição seja verdadeira
+        printf("Você é menor de idade.\n");
+    }
+
+    printf("\nExemplo com for:\n");
+    for (int i = 0; i < 5; i++) { // Itera os números: 0, 1, 2, 3, 4
+        printf("O valor de i é: %d\n", i);
+    }
+
+    int contador = 0;
+    while (contador < 5) { // Enquanto a condição for verdadeira
+        printf("O contador é: %d\n", contador);
+        contador++;
+    }
+
+    return 0;
+}

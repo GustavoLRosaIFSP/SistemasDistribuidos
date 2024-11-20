@@ -1,0 +1,34 @@
+
+print("Olá, Mundo!")  # Impressão na Tela -> Olá, Mundo!
+
+print(2 + 3)  # Impressão na Tela -> 5
+
+print("A soma de 2 + 3 é:", 2 + 3)  # Impressão na Tela -> A soma de 2 + 3 é: 5
+
+# Variáveis são como "caixas" que guardam dados.
+idade = 25  # 'idade' é considerado um int
+nome = "Ana"  # 'nome' é considerado uma string
+
+# input() sempre retorna uma string.
+idade = input("Digite sua idade: ") 
+print("Sua idade é:", idade)
+idade = int(idade)  # Converte para inteiro
+
+if idade >= 18:  # Se a condição for verdadeira
+    print("Você é maior de idade.")
+elif idade >= 16:  # Se a primeira condição não for verdadeira
+    print("Você pode votar, mas não dirigir.")
+else:  # Caso nenhuma condição seja verdadeira
+    print("Você é menor de idade.")
+
+print("\nExemplo com for:")
+for i in range(5):  # range(5) itera os números: 0, 1, 2, 3, 4
+    print("O valor de i é:", i)
+
+contador = 0
+while contador < 5:  # Enquanto a condição for verdadeira
+    print("O contador é:", contador)
+    contador += 1  
+
+
+print("Olá, Mundo!")  # Impressão na Tela -> Olá, Mundo!\n\nprint(2 + 3)  # Impressão na Tela -> 5\n\nprint("A soma de 2 + 3 é:", 2 + 3)  # Impressão na Tela -> A soma de 2 + 3 é: 5\n\nidade = 25  # 'idade' é considerado um int\nnome = "Ana"  # 'nome' é considerado uma string\n\n# input() sempre retorna uma string.\nidade = input("Digite sua idade: ")\nprint("Sua idade é:", idade)\nidade = int(idade)  # Converte para inteiro\n\nif idade >= 18:  # Se a condição for verdadeira\n    print("Você é maior de idade.")\nelif idade >= 16:  # Se a primeira condição não for verdadeira\n    print("Você pode votar, mas não dirigir.")\nelse:  # Caso nenhuma condição seja verdadeira\n    print("Você é menor de idade.")\nprint("\nExemplo com for:")\nfor i in range(5):  # range(5) itera os números: 0, 1, 2, 3, 4\n    print("O valor de i é:", i)\ncontador = 0\nwhile contador < 5:  # Enquanto a condição for verdadeira\n print("O contador é:", contador)\n  contador += 1\n  

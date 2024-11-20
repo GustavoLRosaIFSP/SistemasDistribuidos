@@ -1,0 +1,35 @@
+console.log("Olá, Mundo!"); // Impressão na Tela -> Olá, Mundo!
+
+console.log(2 + 3); // Impressão na Tela -> 5
+
+console.log("A soma de 2 + 3 é:", 2 + 3); // Impressão na Tela -> A soma de 2 + 3 é: 5
+
+// Variáveis são como "caixas" que guardam dados.
+let idade = 25; // 'idade' é considerado um número
+let nome = "Ana"; // 'nome' é considerado uma string
+
+// Entrada de dados (simulação com prompt)
+idade = parseInt(prompt("Digite sua idade: "));
+console.log("Sua idade é:", idade);
+
+if (idade >= 18) { // Se a condição for verdadeira
+    console.log("Você é maior de idade.");
+} else if (idade >= 16) { // Se a primeira condição não for verdadeira
+    console.log("Você pode votar, mas não dirigir.");
+} else { // Caso nenhuma condição seja verdadeira
+    console.log("Você é menor de idade.");
+}
+
+console.log("\nExemplo com for:");
+for (let i = 0; i < 5; i++) { // Itera os números: 0, 1, 2, 3, 4
+    console.log("O valor de i é:", i);
+}
+
+let contador = 0;
+while (contador < 5) { // Enquanto a condição for verdadeira
+    console.log("O contador é:", contador);
+    contador++;
+}
+
+
+console.log("Olá, Mundo!"); // Impressão na Tela -> Olá, Mundo!\n\nconsole.log(2 + 3); // Impressão na Tela -> 5\n\nconsole.log("A soma de 2 + 3 é:", 2 + 3); // Impressão na Tela -> A soma de 2 + 3 é: 5\n\n// Variáveis são como "caixas" que guardam dados.\nlet idade = 25; // 'idade' é considerado um número\nlet nome = "Ana"; // 'nome' é considerado uma string\n\n// Entrada de dados (simulação com prompt)\nidade = parseInt(prompt("Digite sua idade: "));\nconsole.log("Sua idade é:", idade);\n\nif (idade >= 18) { // Se a condição for verdadeira\n    console.log("Você é maior de idade.");\n} else if (idade >= 16) { // Se a primeira condição não for verdadeira\n    console.log("Você pode votar, mas não dirigir.");\n} else { // Caso nenhuma condição seja verdadeira\n console.log("Você é menor de idade.");\n}\n\nconsole.log("\nExemplo com for:");\nfor (let i = 0; i < 5; i++) { // Itera os números: 0, 1, 2, 3, 4\n  console.log("O valor de i é:", i);\n}\nlet contador = 0;\nwhile (contador < 5) { // Enquanto a condição for verdadeira\n  console.log("O contador é:", contador);\n   contador++;\n}\n

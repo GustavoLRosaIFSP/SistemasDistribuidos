@@ -1,0 +1,41 @@
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Olá, Mundo!") // Impressão na Tela -> Olá, Mundo!
+
+    fmt.Println(2 + 3) // Impressão na Tela -> 5
+
+    fmt.Println("A soma de 2 + 3 é:", 2+3) // Impressão na Tela -> A soma de 2 + 3 é: 5
+
+    // Variáveis são como "caixas" que guardam dados.
+    var idade int = 25 // 'idade' é considerado um int
+    var nome string = "Ana" // 'nome' é considerado uma string
+
+    // Entrada de dados
+    fmt.Print("Digite sua idade: ")
+    fmt.Scanln(&idade)
+    fmt.Println("Sua idade é:", idade)
+
+    if idade >= 18 { // Se a condição for verdadeira
+        fmt.Println("Você é maior de idade.")
+    } else if idade >= 16 { // Se a primeira condição não for verdadeira
+        fmt.Println("Você pode votar, mas não dirigir.")
+    } else { // Caso nenhuma condição seja verdadeira
+        fmt.Println("Você é menor de idade.")
+    }
+
+    fmt.Println("\nExemplo com for:")
+    for i := 0; i < 5; i++ { // Itera os números: 0, 1, 2, 3, 4
+        fmt.Println("O valor de i é:", i)
+    }
+
+    contador := 0
+    for contador < 5 { // Enquanto a condição for verdadeira
+        fmt.Println("O contador é:", contador)
+        contador++
+    }
+}
+
+package main\n\nimport "fmt"\n\nfunc main() {\n    fmt.Println("Olá, Mundo!") // Impressão na Tela -> Olá, Mundo!\n\n    fmt.Println(2 + 3) // Impressão na Tela -> 5\n\n    fmt.Println("A soma de 2 + 3 é:", 2+3) // Impressão na Tela -> A soma de 2 + 3 é: 5\n\n    // Variáveis são como "caixas" que guardam dados.\n    var idade int = 25 // 'idade' é considerado um int\n    var nome string = "Ana" // 'nome' é considerado uma string\n\n    // Entrada de dados\n    fmt.Print("Digite sua idade: ")\n    fmt.Scanln(&idade)\n    fmt.Println("Sua idade é:", idade)\n\n    if idade >= 18 { // Se a condição for verdadeira\n        fmt.Println("Você é maior de idade.")\n    } else if idade >= 16 { // Se a primeira condição não for verdadeira\n        fmt.Println("Você pode votar, mas não dirigir.")\n    } else { // Caso nenhuma condição seja verdadeira\n        fmt.Println("Você é menor de idade.")\n    }\n\n    fmt.Println("\nExemplo com for:")\n    for i := 0; i < 5; i++ { // Itera os números: 0, 1, 2, 3, 4\n        fmt.Println("O valor de i é:", i)\n    }\n\n    contador := 0\n    for contador < 5 { // Enquanto a condição for verdadeira\n        fmt.Println("O contador é:", contador)\n        contador++\n    }\n}\n

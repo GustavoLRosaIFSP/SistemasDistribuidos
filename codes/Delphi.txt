@@ -1,0 +1,53 @@
+javascript: `console.log("Hello, World!");`,
+            python: `print("Olá, Mundo!")\nprint(2 + 3)\nprint("A soma de 2 + 3 é:", 2 + 3)\nidade = 25\nnome = "Ana"\nidade = input("Digite sua idade: ")\nprint("Sua idade é:", idade)\nidade = int(idade)\nif idade >= 18:\n    print("Você é maior de idade.")\nelif idade >= 16:\n    print("Você pode votar, mas não dirigir.")\nelse:\n    print("Você é menor de idade.")\nprint("\\nExemplo com for:")\nfor i in range(5):\n    print("O valor de i é:", i)\ncontador = 0\nwhile contador < 5:\n    print("O contador é:", contador)\n    contador += 1\n`,
+            cpp: `#include <iostream>\n#include <string>\nint main() {\nstd::cout << "Olá, Mundo!" << std::endl;\nstd::cout << (2 + 3) << std::endl;\nstd::cout << "A soma de 2 + 3 é: " << (2 + 3) << std::endl;\nint idade = 25;\nstd::string nome = "Ana";\nstd::cout << "Digite sua idade: ";\nstd::cin >> idade;\nstd::cout << "Sua idade é: " << idade << std::endl;\nif (idade >= 18) {\n    std::cout << "Você é maior de idade." << std::endl;\n} else if (idade >= 16) {\n    std::cout << "Você pode votar, mas não dirigir." << std::endl;\n} else {\n    std::cout << "Você é menor de idade." << std::endl;\n}\nstd::cout << "\\nExemplo com for:" << std::endl;\nfor (int i = 0; i < 5; i++) {\n    std::cout << "O valor de i é: " << i << std::endl;\n}\nint contador = 0;\nwhile (contador < 5) {\n    std::cout << "O contador é: " << contador << std::endl;\n    contador++;\n}\nreturn 0;\n}\n`,
+            c: `#include <stdio.h>\nint main() {\nprintf("Olá, Mundo!\\n");\nprintf("%d\\n", 2 + 3);\nprintf("A soma de 2 + 3 é: %d\\n", 2 + 3);\nint idade = 25;\nchar nome[] = "Ana";\nprintf("Digite sua idade: ");\nscanf("%d", &idade);\nprintf("Sua idade é: %d\\n", idade);\nif (idade >= 18) {\n    printf("Você é maior de idade.\\n");\n} else if (idade >= 16) {\n    printf("Você pode votar, mas não dirigir.\\n");\n} else {\n    printf("Você é menor de idade.\\n");\n}\nprintf("\\nExemplo com for:\\n");\nfor (int i = 0; i < 5; i++) {\n    printf("O valor de i é: %d\\n", i);\n}\nint contador = 0;\nwhile (contador < 5) {\n    printf("O contador é: %d\\n", contador);\n    contador++;\n}\nreturn 0;\n}\n`,
+            go: 'package main\nimport "fmt"\nfunc main() {\n    fmt.Println("Olá, Mundo!") // Impressão na Tela -> Olá, Mundo!\n    fmt.Println(2 + 3) // Impressão na Tela -> 5\n    fmt.Println("A soma de 2 + 3 é:", 2+3) // Impressão na Tela -> A soma de 2 + 3 é: 5\n    var idade int = 25 // idade é considerado um int\n    var nome string = "Ana" // nome é considerado uma string\n    fmt.Print("Digite sua idade: ")\n    fmt.Scanln(&idade)\n    fmt.Println("Sua idade é:", idade)\n    if idade >= 18 {\n        fmt.Println("Você é maior de idade.")\n    } else if idade >= 16 {\n        fmt.Println("Você pode votar, mas não dirigir.")\n    } else {\n        fmt.Println("Você é menor de idade.")\n    }\n    fmt.Println("\nExemplo com for:")\n    for i := 0; i < 5; i++ {\n        fmt.Println("O valor de i é:", i)\n    }\n    contador := 0\n    for contador < 5 {\n        fmt.Println("O contador é:", contador)\n        contador++\n    }\n}\n',
+            java: 'import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println("Olá, Mundo!"); // Impressão na Tela -> Olá, Mundo!\n        System.out.println(2 + 3); // Impressão na Tela -> 5\n        System.out.println("A soma de 2 + 3 é: " + (2 + 3)); // Impressão na Tela -> A soma de 2 + 3 é: 5\n        int idade = 25; // idade é considerado um int\n        String nome = "Ana"; // nome é considerado uma string\n        Scanner scanner = new Scanner(System.in);\n        System.out.print("Digite sua idade: ");\n        idade = scanner.nextInt();\n        System.out.println("Sua idade é: " + idade);\n        if (idade >= 18) {\n            System.out.println("Você é maior de idade.");\n        } else if (idade >= 16) {\n            System.out.println("Você pode votar, mas não dirigir.");\n        } else {\n            System.out.println("Você é menor de idade.");\n        }\n        System.out.println("\nExemplo com for:");\n        for (int i = 0; i < 5; i++) {\n            System.out.println("O valor de i é: " + i);\n        }\n        int contador = 0;\n        while (contador < 5) {\n            System.out.println("O contador é: " + contador);\n            contador++;\n        }\n        scanner.close();\n    }\n}\n',
+            php: '<?php\necho "Hello, World!";\n?>\n',
+            csharp: 'using System;\nclass Program {\n    static void Main() {\n        Console.WriteLine("Olá, Mundo!"); // Impressão na Tela -> Olá, Mundo!\n        Console.WriteLine(2 + 3); // Impressão na Tela -> 5\n        Console.WriteLine("A soma de 2 + 3 é: " + (2 + 3)); // Impressão na Tela -> A soma de 2 + 3 é: 5\n        int idade = 25; // idade é considerado um int\n        string nome = "Ana"; // "nome" é considerado uma string\n        Console.Write("Digite sua idade: ");\n        idade = int.Parse(Console.ReadLine());\n        Console.WriteLine("Sua idade é: " + idade);\n        if (idade >= 18) {\n            Console.WriteLine("Você é maior de idade.");\n        } else if (idade >= 16) {\n            Console.WriteLine("Você pode votar, mas não dirigir.");\n        } else {\n            Console.WriteLine("Você é menor de idade.");\n        }\n        Console.WriteLine("\nExemplo com for:");\n        for (int i = 0; i < 5; i++) {\n            Console.WriteLine("O valor de i é: " + i);\n        }\n        int contador = 0;\n        while (contador < 5) {\n            Console.WriteLine("O contador é: " + contador);\n            contador++;\n        }\n    }\n}\n',
+            delphi: 'program HelloWorld;\nvar\n    idade: Integer;\n    nome: String;\n    i: Integer;\n    contador: Integer;\nbegin\n    Writeln("Olá, Mundo!"); // Impressão na Tela -> Olá, Mundo!\n    Writeln(2 + 3); // Impressão na Tela -> 5\n    Writeln("A soma de 2 + 3 é:", 2 + 3); // Impressão na Tela -> A soma de 2 + 3 é: 5\n    idade := 25; // "idade" é considerado um Integer\n    nome := "Ana"; // "nome" é considerado uma String\n    Write("Digite sua idade: "");\n    Readln(idade);\n    Writeln("Sua idade é: ", idade);\n    if idade >= 18 then\n        Writeln("Você é maior de idade."")\n    else if idade >= 16 then\n        Writeln("Você pode votar, mas não dirigir.)\n    else\n        Writeln("Você é menor de idade.);\n    Writeln(#10"Exemplo com for:");\n    for i := 0 to 4 do\n        Writeln("O valor de i é: , i);\n    contador := 0;\n    while contador < 5 do\n    begin\n        Writeln(O contador é: , contador);\n        contador := contador + 1;\n    end;\nend.\n',
+            fortran: `program HelloWorld',
+            implicit none
+            integer :: idade, contador, i
+
+            print *, "Olá, Mundo!" ! Impressão na Tela -> Olá, Mundo!
+
+            print *, 2 + 3 ! Impressão na Tela -> 5
+
+            print *, "A soma de 2 + 3 é:", 2 + 3 ! Impressão na Tela -> A soma de 2 + 3 é: 5
+
+            ! Variáveis são como "caixas" que guardam dados.
+            idade = 25 ! 'idade' é considerado um inteiro
+
+            ! Entrada de dados
+            print *, "Digite sua idade: "
+            read *, idade
+            print *, "Sua idade é:", idade
+
+            if (idade >= 18) then ! Se a condição for verdadeira
+                print *, "Você é maior de idade."
+            else if (idade >= 16) then ! Se a primeira condição não for verdadeira
+                print *, "Você pode votar, mas não dirigir."
+            else ! Caso nenhuma condição seja verdadeira
+                print *, "Você é menor de idade."
+            end if
+
+            print *, ""
+            print *, "Exemplo com for:"
+            do i = 0, 4 ! Itera os números: 0, 1, 2, 3, 4
+                print *, "O valor de i é:", i
+            end do
+
+            contador = 0
+            do while (contador < 5) ! Enquanto a condição for verdadeira
+                print *, "O contador é:", contador
+                contador = contador + 1
+            end do
+        end program HelloWorld
+        `,
+            lua: `print("Hello, World!")`,
+            matlab: `disp('Hello, World!')`,
+            sql: `SELECT 'Hello, World!' AS Greeting;`,
+            visualBasic: `Module Module1\n    Sub Main()\n        Console.WriteLine("Hello, World!")\n    End Sub\nEnd Module`
+        };

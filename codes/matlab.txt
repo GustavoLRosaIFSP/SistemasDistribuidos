@@ -1,0 +1,36 @@
+% Olá, Mundo!
+disp("Olá, Mundo!") % Impressão na Tela -> Olá, Mundo!
+
+disp(2 + 3) % Impressão na Tela -> 5
+
+disp("A soma de 2 + 3 é: " + string(2 + 3)) % Impressão na Tela -> A soma de 2 + 3 é: 5
+
+% Variáveis são como "caixas" que guardam dados.
+idade = 25; % 'idade' é considerado um número
+nome = "Ana"; % 'nome' é considerado uma string
+
+% Entrada de dados
+idade = input("Digite sua idade: "); % Solicita entrada do usuário
+disp("Sua idade é: " + string(idade))
+
+% Condicional
+if idade >= 18
+    disp("Você é maior de idade.")
+elseif idade >= 16
+    disp("Você pode votar, mas não dirigir.")
+else
+    disp("Você é menor de idade.")
+end
+
+% Exemplo com for
+disp("Exemplo com for:")
+for i = 0:4
+    disp("O valor de i é: " + string(i))
+end
+
+% Exemplo com while
+contador = 0;
+while contador < 5
+    disp("O contador é: " + string(contador))
+    contador = contador + 1;
+end

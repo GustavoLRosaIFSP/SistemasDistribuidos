@@ -1,0 +1,43 @@
+Module Program
+    Sub Main()
+        Console.WriteLine("Olá, Mundo!") ' Impressão na Tela -> Olá, Mundo!
+
+        Console.WriteLine(2 + 3) ' Impressão na Tela -> 5
+
+        Console.WriteLine("A soma de 2 + 3 é: " & (2 + 3)) ' Impressão -> A soma de 2 + 3 é: 5
+
+        ' Variáveis são como "caixas" que guardam dados.
+        Dim idade As Integer = 25 ' 'idade' é considerado um número
+        Dim nome As String = "Ana" ' 'nome' é considerado uma string
+
+        ' Entrada de dados
+        Console.Write("Digite sua idade: ")
+        idade = Integer.Parse(Console.ReadLine()) ' Converte entrada para número
+        Console.WriteLine("Sua idade é: " & idade)
+
+        ' Condicional
+        If idade >= 18 Then
+            Console.WriteLine("Você é maior de idade.")
+        ElseIf idade >= 16 Then
+            Console.WriteLine("Você pode votar, mas não dirigir.")
+        Else
+            Console.WriteLine("Você é menor de idade.")
+        End If
+
+        ' Exemplo com for
+        Console.WriteLine("Exemplo com for:")
+        For i As Integer = 0 To 4
+            Console.WriteLine("O valor de i é: " & i)
+        Next
+
+        ' Exemplo com while
+        Dim contador As Integer = 0
+        While contador < 5
+            Console.WriteLine("O contador é: " & contador)
+            contador += 1
+        End While
+    End Sub
+End Module
+
+
+Module Program\n    Sub Main()\n        Console.WriteLine("Olá, Mundo!") ' Impressão na Tela -> Olá, Mundo!\n\n        Console.WriteLine(2 + 3) ' Impressão na Tela -> 5\n\n        Console.WriteLine("A soma de 2 + 3 é: " & (2 + 3)) ' Impressão -> A soma de 2 + 3 é: 5\n\n        ' Variáveis são como "caixas" que guardam dados.\n        Dim idade As Integer = 25 ' 'idade' é considerado um número\n        Dim nome As String = "Ana" ' 'nome' é considerado uma string\n\n        ' Entrada de dados\n        Console.Write("Digite sua idade: ")\n        idade = Integer.Parse(Console.ReadLine()) ' Converte entrada para número\n        Console.WriteLine("Sua idade é: " & idade)\n\n        ' Condicional\n        If idade >= 18 Then\n            Console.WriteLine("Você é maior de idade.")\n        ElseIf idade >= 16 Then\n            Console.WriteLine("Você pode votar, mas não dirigir.")\n        Else\n            Console.WriteLine("Você é menor de idade.")\n        End If\n\n        ' Exemplo com for\n        Console.WriteLine("Exemplo com for:")\n        For i As Integer = 0 To 4\n            Console.WriteLine("O valor de i é: " & i)\n        Next\n\n        ' Exemplo com while\n        Dim contador As Integer = 0\n        While contador < 5\n            Console.WriteLine("O contador é: " & contador)\n            contador += 1\n        End While\n    End Sub\nEnd Module\n

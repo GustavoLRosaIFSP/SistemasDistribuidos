@@ -1,0 +1,38 @@
+program HelloWorld
+    implicit none
+    integer :: idade, contador, i
+
+    print *, "Olá, Mundo!" ! Impressão na Tela -> Olá, Mundo!
+
+    print *, 2 + 3 ! Impressão na Tela -> 5
+
+    print *, "A soma de 2 + 3 é:", 2 + 3 ! Impressão na Tela -> A soma de 2 + 3 é: 5
+
+    ! Variáveis são como "caixas" que guardam dados.
+    idade = 25 ! 'idade' é considerado um inteiro
+
+    ! Entrada de dados
+    print *, "Digite sua idade: "
+    read *, idade
+    print *, "Sua idade é:", idade
+
+    if (idade >= 18) then ! Se a condição for verdadeira
+        print *, "Você é maior de idade."
+    else if (idade >= 16) then ! Se a primeira condição não for verdadeira
+        print *, "Você pode votar, mas não dirigir."
+    else ! Caso nenhuma condição seja verdadeira
+        print *, "Você é menor de idade."
+    end if
+
+    print *, ""
+    print *, "Exemplo com for:"
+    do i = 0, 4 ! Itera os números: 0, 1, 2, 3, 4
+        print *, "O valor de i é:", i
+    end do
+
+    contador = 0
+    do while (contador < 5) ! Enquanto a condição for verdadeira
+        print *, "O contador é:", contador
+        contador = contador + 1
+    end do
+end program HelloWorld
