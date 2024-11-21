@@ -34,3 +34,6 @@ while contador < 5
     disp("O contador é: " + string(contador))
     contador = contador + 1;
 end
+
+
+% Olá, Mundo!\ndisp("Olá, Mundo!") % Impressão na Tela -> Olá, Mundo!\n\ndisp(2 + 3) % Impressão na Tela -> 5\n\ndisp("A soma de 2 + 3 é: " + string(2 + 3)) % Impressão na Tela -> A soma de 2 + 3 é: 5\n\n% Variáveis são como "caixas" que guardam dados.\nidade = 25; % 'idade' é considerado um número\nnome = "Ana"; % 'nome' é considerado uma string\n% Entrada de dados\nidade = input("Digite sua idade: "); % Solicita entrada do usuário\ndisp("Sua idade é: " + string(idade))\n\n% Condicional\nif idade >= 18\n    disp("Você é maior de idade.")\nelseif idade >= 16\n    disp("Você pode votar, mas não dirigir.")\nelse\n    disp("Você é menor de idade.")\nend\n\n% Exemplo com for\ndisp("Exemplo com for:")\nfor i = 0:4\n    disp("O valor de i é: " + string(i))\nend\n\n% Exemplo com while\ncontador = 0;\nwhile contador < 5\n    disp("O contador é: " + string(contador))\n    contador = contador + 1;\nend\n
