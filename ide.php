@@ -19,9 +19,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="sobre.php">Sobre nós</a></li>
                 <li><a href="index.html">Linguagens</a></li>
-                <li><a href="ide.html">IDE</a></li>
+                <li><a href="ide.php">IDE</a></li>
+                <li><a href="questionario.php">Questionario</a></li>
             </ul>
         </nav>
     </header>
